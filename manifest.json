@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name" : "Budget Manager",
+    "version" : "1.0",
+    "description" : "tracks your spending",
+    "icons":{
+        "128" : "/images/icons128.png",
+        "48" : "/images/icons48.png",
+        "16" : "/images/icons16.png"
+    },
+    "action" : {
+        "deafault_icon" : "/images/icons16.png",
+        "default_popup" : "popup.html"
+    },
+    
+    "options_page" : "options.html",
+
+    "background" : {
+        "service_worker" : "eventPage.js"
+    },
+
+    "permissions" : [
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}
